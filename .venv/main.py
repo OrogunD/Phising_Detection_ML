@@ -34,7 +34,7 @@ def count_urls(urls):
         return len(urls)
 
 # Read the dataset
-df = pd.read_csv(r"C:\Users\orogu\Documents\School\NTU Finals\COMP3015152 Final Year Project\Phishing_Email.csv\Nazario_5.csv")
+df = pd.read_csv('Nazario_5.csv')
 
 # Preprocess text columns
 df['subject'] = df['subject'].apply(preprocess_text)
