@@ -74,4 +74,4 @@ tfidf_df.to_csv('tfidf_vectorized_emails.csv', index=False)
 # Save the entire preprocessed dataframe with original text and labels
 df.to_csv('PhishingEmail_pre.csv', index=False, encoding='utf-8')
 
-print("Preprocessing complete. Files 'tfidf_vectorized_emails.csv' and 'PhishingEmail_pre.csv' have been saved.")
+print("Preprocessing complete. Files 'tfidf_vectorized_emails.csv' and 'PhishingEmail_pre.csv' have been saved")
