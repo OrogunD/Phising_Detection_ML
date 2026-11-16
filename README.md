@@ -41,7 +41,13 @@ pip install -r requirements.txt
 python preprocess.py
 ```
 
+Needs Python 3.12 or newer.
+
 The script reads `Nazario_5.csv` from the same folder and writes the two generated CSV files next to it.
+
+### A note on re-running
+
+The CSV and ARFF files in this repo are the originals used for the dissertation results. If you re-run the script, `PhishingEmail_pre.csv` comes out identical, but `tfidf_vectorized_emails.csv` can differ by a handful of columns. The vectoriser keeps the 1,000 most frequent terms, and 13 terms are tied for the last 5 places, so which of them make the cut depends on the library versions and the machine. The other 995 terms are always the same.
 
 ## Tools
 
